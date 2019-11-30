@@ -1,0 +1,9 @@
+{
+  "name": "growme-ui-components",
+  "version": "1.0.0",
+  "description": "UI Components for growme.fyi and its subdomains.",
+  "main": "src/index.js",
+  "author": "Corey Ferguson",
+  "license": "ISC",
+  "private": false
+}
