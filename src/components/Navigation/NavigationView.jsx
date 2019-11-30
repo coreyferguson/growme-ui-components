@@ -5,8 +5,8 @@ export default function NavigationView(props) {
   return (
     <nav>
       <ul className='navigation'>
-        <div className='logo'>{logo}</div>
-        <div className='applicationName'>{applicationName}</div>
+        <li className='logo'>{props.logo}</li>
+        <li className='applicationName'>{props.applicationName}</li>
       </ul>
       <ul className='contextual'>
       </ul>

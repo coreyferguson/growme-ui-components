@@ -15,5 +15,12 @@
   },
   "scripts": {
     "build": "webpack --mode production"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.5"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "yarn"
   }
 }
