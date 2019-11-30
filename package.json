@@ -25,10 +25,17 @@
     "start": "webpack-dev-server --config webpack.dev.js --open"
   },
   "bit": {
+    "componentsDefaultDirectory": "components/{name}",
     "env": {
       "compiler": "bit.envs/compilers/react@1.0.5"
     },
-    "componentsDefaultDirectory": "components/{name}",
+    "overrides": {
+      "styles/*": {
+        "env": {
+          "compiler": "-"
+        }
+      }
+    },
     "packageManager": "yarn"
   }
 }

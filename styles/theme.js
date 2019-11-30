@@ -2,7 +2,6 @@ const theme = {
   colors: {
     background_1: '#212121',
     background_2: '#2E2E2E',
-    background_2_border_color: '#828282', // =  background_2 * 0.2
 
     foreground_0: '#FFFFFF',
     foreground_1: '#F2F2F2',

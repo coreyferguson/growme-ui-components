@@ -65,5 +65,9 @@ export default styled.div`
     flex-flow: row-reverse nowrap;
     align-items: center;
     padding-right: 20px;
+
+    > li {
+      margin-left: 40px;
+    }
   }
 `;
