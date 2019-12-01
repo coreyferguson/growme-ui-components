@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../../src/components/Navigation';
-import UnderConstructionPage from '../../src/components/UnderConstructionPage';
+import LoadingPage from '../../src/components/LoadingPage';
 
 export default function Root() {
   const props = {
@@ -11,7 +11,7 @@ export default function Root() {
   return (
     <React.Fragment>
       <Navigation {...props} />
-      <UnderConstructionPage style={{ flexGrow: 1 }} />
+      <LoadingPage style={{ flexGrow: 1 }} />
     </React.Fragment>
   );
 }
