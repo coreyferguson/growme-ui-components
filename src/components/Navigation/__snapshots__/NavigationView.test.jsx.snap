@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationView snapshot 1`] = `
+<nav>
+  <ul
+    className="navigation"
+  >
+    <li
+      className="logo"
+    >
+      <a
+        href="#"
+      >
+        <img
+          src="https://assets.growme.fyi/logo_medium.jpg"
+        />
+        growme.fyi
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://flash.growme.fyi"
+      >
+        flash
+      </a>
+    </li>
+  </ul>
+  <ul
+    className="contextual"
+  >
+    <li>
+      <a
+        href="#"
+      >
+        sign in
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
