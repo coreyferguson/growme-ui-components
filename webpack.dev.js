@@ -6,6 +6,7 @@ module.exports = {
     port: 9000
   },
   entry: './test/manual/index.js',
+  externals: {},
   plugins: [
     new HtmlWebpackPlugin({
       template: './test/manual/index.html',
@@ -17,10 +18,7 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          }
+          loader: 'babel-loader'
         }
       }
     ]

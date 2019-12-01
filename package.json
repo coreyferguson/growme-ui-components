@@ -12,19 +12,19 @@
     "@babel/preset-react": "^7.7.4",
     "babel-loader": "^8.0.6",
     "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
-  },
-  "peerDependencies": {
+    "jest": "^24.9.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "styled-components": "^4.4.1"
+    "react": "^16.12.0",
+    "styled-components": "^4.4.1",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack": "^4.41.2"
   },
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --config webpack.dev.js --open"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "test": "jest src --watch"
   },
   "bit": {
     "componentsDefaultDirectory": "components/{name}",
@@ -32,6 +32,20 @@
       "compiler": "bit.envs/compilers/react@1.0.5"
     },
     "overrides": {
+      "*": {
+        "dependencies": {
+          "prop-types": "-",
+          "react": "-",
+          "react-dom": "-",
+          "styled-components": "-"
+        },
+        "peerDependencies": {
+          "prop-types": "+",
+          "react": "+",
+          "react-dom": "+",
+          "styled-components": "+"
+        }
+      },
       "styles/*": {
         "env": {
           "compiler": "-"
