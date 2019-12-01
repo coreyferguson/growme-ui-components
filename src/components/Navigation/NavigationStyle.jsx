@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import theme from '../../../styles/theme';
 
 export default styled.div`
+  width: 100%;
+
   a {
     color: ${theme.colors.foreground_1};
     text-decoration: none;

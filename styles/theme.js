@@ -11,6 +11,10 @@ const theme = {
   sizes: {
     font_size_spacious: '24px',
     font_size_cozy: '14px'
+  },
+  styles: {
+    font_family: "'Roboto', sans-serif",
+    letter_spacing: '0.2px',
   }
 };
 export default theme;
