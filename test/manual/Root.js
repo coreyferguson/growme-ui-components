@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../../src/components/Navigation';
+import UnderConstructionPage from '../../src/components/UnderConstructionPage';
 
 export default function Root() {
   const props = {
@@ -8,6 +9,9 @@ export default function Root() {
     contextualLinks: [ <a href='#'>sign in</a> ],
   };
   return (
-    <Navigation {...props} />
+    <React.Fragment>
+      <Navigation {...props} />
+      <UnderConstructionPage style={{ flexGrow: 1 }} />
+    </React.Fragment>
   );
 }

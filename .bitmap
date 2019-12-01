@@ -47,5 +47,38 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "overattribution.growme/under-construction-page@0.0.25": {
+        "files": [
+            {
+                "relativePath": "src/components/UnderConstructionPage/UnderConstructionPageStyle.jsx",
+                "test": false,
+                "name": "UnderConstructionPageStyle.jsx"
+            },
+            {
+                "relativePath": "src/components/UnderConstructionPage/UnderConstructionPageView.jsx",
+                "test": false,
+                "name": "UnderConstructionPageView.jsx"
+            },
+            {
+                "relativePath": "src/components/UnderConstructionPage/UnderConstructionPageView.test.jsx",
+                "test": false,
+                "name": "UnderConstructionPageView.test.jsx"
+            },
+            {
+                "relativePath": "src/components/UnderConstructionPage/__snapshots__/UnderConstructionPageView.test.jsx.snap",
+                "test": false,
+                "name": "UnderConstructionPageView.test.jsx.snap"
+            },
+            {
+                "relativePath": "src/components/UnderConstructionPage/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/UnderConstructionPage/index.js",
+        "trackDir": "src/components/UnderConstructionPage",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "version": "14.5.0"
 }
