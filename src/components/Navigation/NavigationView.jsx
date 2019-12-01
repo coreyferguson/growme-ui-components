@@ -11,7 +11,7 @@ export default function NavigationView(props) {
   return (
     <nav>
       <ul className='navigation'>
-        <li className='logo'>{props.logo}</li>
+        {props.logo && <li className='logo'>{props.logo}</li>}
         {navigationLinks}
       </ul>
       <ul className='contextual'>
@@ -22,7 +22,7 @@ export default function NavigationView(props) {
 }
 
 NavigationView.propTypes = {
-  logo: PropTypes.element.isRequired,
+  logo: PropTypes.element,
   navigationalLinks: PropTypes.arrayOf(PropTypes.element),
   contextualLinks: PropTypes.arrayOf(PropTypes.element)
 };
