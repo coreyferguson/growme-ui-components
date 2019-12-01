@@ -4,12 +4,26 @@ import theme from '../../../styles/theme';
 
 export default styled.div`
   width: 100%;
+  color: ${theme.colors.foreground_1};
+
+  @media screen and (max-width: 799px) {
+    font-size: ${theme.sizes.font_size_cozy};
+  }
+  @media screen and (min-width: 800px) {
+    font-size: ${theme.sizes.font_size_spacious};
+  }
 
   a {
     color: ${theme.colors.foreground_1};
     text-decoration: none;
     border-radius: 10px 5px 10px 5px;
-    padding: 10px 5px 10px 5px;
+    @media screen and (max-width: 799px) {
+      padding: 5px 5px 5px 5px;
+    }
+    @media screen and (min-width: 800px) {
+      padding: 10px 5px 10px 5px;
+    }
+
   }
 
   a:hover {
@@ -17,40 +31,70 @@ export default styled.div`
     color: ${theme.colors.background_1};
   }
 
+  ul {
+    margin: 0;
+  }
+
   > nav {
-    background-color: ${theme.colors.background_1};
-    color: ${theme.colors.foreground_1};
-    font-size: ${theme.sizes.font_size_spacious};
     display: flex;
     > * {
       flex-grow: 1;
       list-style: none;
-      padding-left: 0;
-      padding-right: 0;
+
+      @media screen and (max-width: 799px) {
+        padding: 5px 0 5px 0;
+      }
+      @media screen and (min-width: 800px) {
+        padding: 20px 0 20px 0;
+      }
     }
   }
 
   > nav ul.navigation {
     display: flex;
     align-items: center;
-    padding-left: 20px;
+
+    @media screen and (max-width: 799px) {
+      padding-left: 5px;
+    }
+    @media screen and (min-width: 800px) {
+      padding-left: 20px;
+    }
 
     > .logo {
       display: flex;
       align-items: center;
+
+      a {
+        padding: 0;
+      }
+
+      img {
+        @media screen and (max-width: 799px) {
+          height: 30px;
+          width: 30px;
+          margin-right: 5px;
+        }
+        @media screen and (min-width: 800px) {
+          height: 50px;
+          width: 50px;
+          margin-right: 10px;
+        }
+      }
     }
 
     > li {
-      margin-right: 40px;
+      @media screen and (max-width: 799px) {
+        margin-right: 5px;
+      }
+      @media screen and (min-width: 800px) {
+        margin-right: 40px;
+      }
 
       > a {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-
-        > img {
-          margin-right: 10px;
-        }
       }
     }
 
@@ -66,10 +110,21 @@ export default styled.div`
     display: flex;
     flex-flow: row-reverse nowrap;
     align-items: center;
-    padding-right: 20px;
+
+    @media screen and (max-width: 799px) {
+      padding-right: 5px;
+    }
+    @media screen and (min-width: 800px) {
+      padding-right: 20px;
+    }
 
     > li {
-      margin-left: 40px;
+      @media screen and (max-width: 799px) {
+        margin-left: 5px;
+      }
+      @media screen and (min-width: 800px) {
+        margin-left: 40px;
+      }
     }
   }
 `;
