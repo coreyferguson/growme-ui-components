@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../../src/components/Navigation';
-import LoadingPage from '../../src/components/LoadingPage';
+import LoadingInline from '../../src/components/LoadingInline';
+import Button from '../../src/components/Button'
 
 export default function Root() {
   const props = {
@@ -11,7 +12,13 @@ export default function Root() {
   return (
     <React.Fragment>
       <Navigation {...props} />
-      <LoadingPage style={{ flexGrow: 1 }} />
+      <section style={{ padding: '0 20px 0 20px' }}>
+        <p>
+          In-line with text: <LoadingInline />
+        </p>
+        <Button><span>press me</span> <LoadingInline /></Button>
+        <Button><span>press me</span></Button>
+      </section>
     </React.Fragment>
   );
 }

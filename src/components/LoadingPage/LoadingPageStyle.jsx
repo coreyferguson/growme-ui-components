@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
-export default function LoadingPageStyleWrapper(props) {
+export default function LoadingPageStyle(props) {
   return (
     <Wrapper {...props}>
       <Animation />

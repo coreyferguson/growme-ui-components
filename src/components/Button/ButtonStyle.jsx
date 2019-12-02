@@ -1,0 +1,81 @@
+import React from 'react';
+import styled from 'styled-components';
+import theme from '../../../styles/theme';
+import PropTypes from 'prop-types';
+
+const Button = styled.button`
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: ${props => props.isCta ? theme.colors.secondary : theme.colors.primary};
+  border: none;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 10px 5px 10px 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: ${theme.colors.foreground_1};
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+
+  &:hover {
+    background-color: ${props => props.isCta ? theme.colors.secondary_darken_2 : theme.colors.primary_darken_2}    ;
+  }
+
+  @media (max-width: 799px) {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: ${theme.sizes.font_size_cozy};
+  }
+  @media (min-width: 800px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: ${theme.sizes.font_size_spacious};
+  }
+
+  > * {
+    &:not(:first-child) {
+      @media screen and (max-width: 799px) {
+        margin-left: 2px;
+      }
+      @media screen and (min-width: 800px) {
+        margin-left: 5px;
+      }
+    }
+    &:not(:last-child) {
+      @media screen and (max-width: 799px) {
+        margin-right: 2px;
+      }
+      @media screen and (min-width: 800px) {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  > .loading {
+    background-color: ${theme.colors.background_1}AA;
+    border-radius: ${theme.styles.border_radius};
+
+    @media screen and (max-width: 799px) {
+      padding: 2px;
+      min-height: 12px;
+      min-width: 12px;
+    }
+    @media screen and (min-width: 800px) {
+      padding: 5px;
+      min-height: 15px;
+      min-width: 15px;
+    }
+  }
+`;
+
+Button.propTypes = {
+  isCta: PropTypes.bool
+};
+
+Button.defaultProps = {
+  isCta: false
+};
+
+export default Button;
