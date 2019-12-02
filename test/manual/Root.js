@@ -12,13 +12,18 @@ export default function Root() {
   return (
     <React.Fragment>
       <Navigation {...props} />
-      <section style={{ padding: '0 20px 0 20px' }}>
-        <p>
-          In-line with text: <LoadingInline />
-        </p>
-        <Button><span>press me</span> <LoadingInline /></Button>
-        <Button><span>press me</span></Button>
-      </section>
+      <div>
+        <Button>button</Button>
+        <Button><span>loading</span><LoadingInline /></Button>
+        <br />
+
+        <Button isCta={true}>CTA</Button>
+        <Button isCta={true}><span>loading</span><LoadingInline /></Button>
+        <br />
+
+        <Button component={<a href='https://google.com'>as href</a>} />
+        <br />
+      </div>
     </React.Fragment>
   );
 }
