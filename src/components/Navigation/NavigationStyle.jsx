@@ -23,7 +23,6 @@ export default styled.div`
     @media screen and (min-width: 800px) {
       padding: 10px 5px 10px 5px;
     }
-
   }
 
   a:hover {
@@ -95,6 +94,10 @@ export default styled.div`
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+
+        &.active {
+          border-bottom: 1px solid white;
+        }
       }
     }
 

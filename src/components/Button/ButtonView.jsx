@@ -10,5 +10,5 @@ export default function ButtonView(props) {
 }
 
 ButtonView.propTypes = {
-  component: PropTypes.object
+  component: PropTypes.element
 };
