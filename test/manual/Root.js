@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '../../src/components/Navigation';
 import LoadingInline from '../../src/components/LoadingInline';
 import Button from '../../src/components/Button'
+import LoadingPage from '../../src/components/LoadingPage';
 
 export default function Root() {
   const props = {
@@ -15,18 +16,7 @@ export default function Root() {
   return (
     <React.Fragment>
       <Navigation {...props} />
-      <div>
-        <Button>button</Button>
-        <Button><span>loading</span><LoadingInline /></Button>
-        <br />
-
-        <Button isCta={true}>CTA</Button>
-        <Button isCta={true}><span>loading</span><LoadingInline /></Button>
-        <br />
-
-        <Button component={<a href='https://flash.growme.fyi'>as href</a>} />
-        <br />
-      </div>
+      <LoadingPage />
     </React.Fragment>
   );
 }
