@@ -26,8 +26,8 @@ describe('NavigationView', () => {
     expect(wrapper.find('ul.navigation li').at(0).text()).toBe('flash');
   });
 
-  test('no navigationLinks provided', () => {
-    const wrapper = shallow(newView({ navigationLinks: undefined }));
+  test('no navigationalLinks provided', () => {
+    const wrapper = shallow(newView({ navigationalLinks: undefined }));
     expect(wrapper.find('ul.navigation li')).toHaveLength(1);
     expect(wrapper.find('ul.navigation li').at(0).text()).toBe('growme.fyi');
   });
@@ -41,7 +41,7 @@ describe('NavigationView', () => {
 function newView(propsOverride) {
   const props = Object.assign({
     logo: <a href='#'><img src='https://assets.growme.fyi/logo_medium.jpg' />growme.fyi</a>,
-    navigationLinks: [ <a href='https://flash.growme.fyi'>flash</a> ],
+    navigationalLinks: [ <a href='https://flash.growme.fyi'>flash</a> ],
     contextualLinks: [ <a href='#'>sign in</a> ],
   }, propsOverride);
   return <NavigationView {...props} />;
