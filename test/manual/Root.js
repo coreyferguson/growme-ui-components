@@ -16,7 +16,7 @@ export default function Root() {
   return (
     <React.Fragment>
       <Navigation {...props} />
-      <LoadingPage />
+      <Button icon='delete' onClick={() => console.log('hi')}/>
     </React.Fragment>
   );
 }

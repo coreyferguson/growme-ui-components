@@ -8,20 +8,34 @@ const ButtonStyle = styled.span`
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: center;
-    background-color: ${props => props.isCta ? theme.colors.secondary : theme.colors.primary};
+    background-color: ${props => {
+      if (props.icon) return theme.colors.background_1;
+      if (props.isCta) return theme.colors.secondary;
+      return theme.colors.primary;
+    }};
     border: none;
     margin: 10px 5px;
     cursor: pointer;
     border-radius: 10px 5px 10px 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: ${props => {
+      if (props.icon) return '5px';
+      return '20px';
+    }};
+    padding-right: ${props => {
+      if (props.icon) return '5px';
+      return '20px';
+    }};
     color: ${theme.colors.foreground_1};
     text-decoration: none;
     text-align: center;
     outline: none;
 
     &:hover {
-      background-color: ${props => props.isCta ? theme.colors.secondary_darken_2 : theme.colors.primary_darken_2}    ;
+      background-color: ${props => {
+        if (props.icon) return theme.colors.background_2;
+        if (props.isCta) return theme.colors.secondary_darken_2;
+        return theme.colors.primary_darken_2;
+      }};
     }
 
     @media (max-width: 799px) {
@@ -30,8 +44,14 @@ const ButtonStyle = styled.span`
       font-size: ${theme.sizes.font_size_cozy};
     }
     @media (min-width: 800px) {
-      padding-top: 16px;
-      padding-bottom: 16px;
+      padding-top: ${props => {
+        if (props.icon) return '5px';
+        return '16px;';
+      }};
+      padding-bottom: ${props => {
+        if (props.icon) return '5px';
+        return '16px';
+      }};
       font-size: ${theme.sizes.font_size_spacious};
     }
 
