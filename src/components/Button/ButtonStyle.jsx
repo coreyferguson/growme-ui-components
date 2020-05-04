@@ -38,20 +38,19 @@ const ButtonStyle = styled.span`
       }};
     }
 
+    padding-top: ${props => {
+      if (props.icon) return '5px';
+      return '16px;';
+    }};
+    padding-bottom: ${props => {
+      if (props.icon) return '5px';
+      return '16px';
+    }};
+
     @media (max-width: 799px) {
-      padding-top: 6px;
-      padding-bottom: 6px;
       font-size: ${theme.sizes.font_size_cozy};
     }
     @media (min-width: 800px) {
-      padding-top: ${props => {
-        if (props.icon) return '5px';
-        return '16px;';
-      }};
-      padding-bottom: ${props => {
-        if (props.icon) return '5px';
-        return '16px';
-      }};
       font-size: ${theme.sizes.font_size_spacious};
     }
 
