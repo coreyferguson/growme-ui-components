@@ -25,9 +25,10 @@ export default styled.div`
     }
   }
 
-  a:hover {
+  a:hover, a:focus {
     background-color: ${theme.colors.foreground_1};
     color: ${theme.colors.background_1};
+    outline: none;
   }
 
   ul {

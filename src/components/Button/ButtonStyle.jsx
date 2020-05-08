@@ -7,6 +7,7 @@ const ButtonStyle = styled.span`
   > button, > a, > a:visited {
     display: inline-flex;
     flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
     background-color: ${props => {
       if (props.icon) return theme.colors.background_1;
@@ -36,6 +37,11 @@ const ButtonStyle = styled.span`
         if (props.isCta) return theme.colors.secondary_darken_2;
         return theme.colors.primary_darken_2;
       }};
+    }
+
+    &:focus {
+      background-color: ${theme.colors.foreground_1};
+      color: ${theme.colors.background_1};
     }
 
     padding-top: ${props => {

@@ -16,7 +16,9 @@ export default function Root() {
   return (
     <React.Fragment>
       <Navigation {...props} />
-      <Button icon='delete' onClick={() => console.log('hi')}/>
+      <Button style={{ minWidth: '300px' }} onClick={() => console.log('hi')}>beep boop</Button>
+      <Button style={{ minWidth: '300px' }} isCta={true} onClick={() => console.log('hi')}>CTA</Button>
+      <Button icon='delete' onClick={() => console.log('hi')}>beep boop</Button>
     </React.Fragment>
   );
 }
