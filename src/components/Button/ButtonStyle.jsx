@@ -4,7 +4,7 @@ import theme from '../../../styles/theme';
 import PropTypes from 'prop-types';
 
 const ButtonStyle = styled.span`
-  > button, > a {
+  > button, > a, > a:visited {
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: center;

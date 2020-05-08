@@ -13,7 +13,7 @@ export default styled.div`
     font-size: ${theme.sizes.font_size_spacious};
   }
 
-  a {
+  a, a:visited {
     color: ${theme.colors.foreground_1};
     text-decoration: none;
     border-radius: 10px 5px 10px 5px;
