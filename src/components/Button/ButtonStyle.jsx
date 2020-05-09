@@ -4,6 +4,14 @@ import theme from '../../../styles/theme';
 import PropTypes from 'prop-types';
 
 const ButtonStyle = styled.span`
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
   > button, > a, > a:visited {
     display: inline-flex;
     flex-flow: row nowrap;
