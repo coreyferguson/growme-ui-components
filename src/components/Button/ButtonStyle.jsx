@@ -44,6 +44,15 @@ const ButtonStyle = styled.span`
       color: ${theme.colors.background_1};
     }
 
+    &:active {
+      background-color: ${props => {
+        if (props.icon) return theme.colors.background_1;
+        if (props.isCta) return theme.colors.secondary_darken_4;
+        return theme.colors.primary_darken_4;
+      }};
+      color: ${theme.colors.foreground_1};
+    }
+
     padding-top: ${props => {
       if (props.icon) return '5px';
       return '16px;';
