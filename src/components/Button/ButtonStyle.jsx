@@ -18,7 +18,7 @@ const ButtonStyle = styled.span`
     justify-content: center;
     align-items: center;
     background-color: ${props => {
-      if (props.icon) return theme.colors.background_1;
+      if (props.icon) return theme.colors.background;
       if (props.isCta) return theme.colors.secondary;
       return theme.colors.primary;
     }};
@@ -34,31 +34,31 @@ const ButtonStyle = styled.span`
       if (props.icon) return '5px';
       return '20px';
     }};
-    color: ${theme.colors.foreground_1};
+    color: ${theme.colors.foreground};
     text-decoration: none;
     text-align: center;
     outline: none;
 
     &:hover {
       background-color: ${props => {
-        if (props.icon) return theme.colors.background_2;
+        if (props.icon) return theme.colors.background_darken_2;
         if (props.isCta) return theme.colors.secondary_darken_2;
         return theme.colors.primary_darken_2;
       }};
     }
 
     &:focus {
-      background-color: ${theme.colors.foreground_1};
-      color: ${theme.colors.background_1};
+      background-color: ${theme.colors.foreground};
+      color: ${theme.colors.background};
     }
 
     &:active {
       background-color: ${props => {
-        if (props.icon) return theme.colors.background_1;
+        if (props.icon) return theme.colors.background;
         if (props.isCta) return theme.colors.secondary_darken_4;
         return theme.colors.primary_darken_4;
       }};
-      color: ${theme.colors.foreground_1};
+      color: ${theme.colors.foreground};
     }
 
     padding-top: ${props => {
@@ -97,7 +97,7 @@ const ButtonStyle = styled.span`
     }
 
     > .loading {
-      background-color: ${theme.colors.background_1}AA;
+      background-color: ${theme.colors.background};
       border-radius: ${theme.styles.border_radius};
 
       @media screen and (max-width: 799px) {

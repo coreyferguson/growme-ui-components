@@ -1,42 +1,20 @@
-import React from 'react';
 import styled from 'styled-components';
 import theme from '../../../styles/theme';
 
 export default styled.div`
   width: 100%;
-  color: ${theme.colors.foreground_1};
-
-  @media screen and (max-width: 799px) {
-    font-size: ${theme.sizes.font_size_cozy};
-  }
-  @media screen and (min-width: 800px) {
-    font-size: ${theme.sizes.font_size_spacious};
-  }
-
-  a, a:visited {
-    color: ${theme.colors.foreground_1};
-    text-decoration: none;
-    border-radius: 10px 5px 10px 5px;
-    @media screen and (max-width: 799px) {
-      padding: 5px 5px 5px 5px;
-    }
-    @media screen and (min-width: 800px) {
-      padding: 10px 5px 10px 5px;
-    }
-  }
-
-  a:hover, a:focus {
-    background-color: ${theme.colors.foreground_1};
-    color: ${theme.colors.background_1};
-    outline: none;
-  }
-
-  ul {
-    margin: 0;
-  }
 
   > nav {
     display: flex;
+    color: ${theme.colors.foreground};
+
+    @media screen and (max-width: 799px) {
+      font-size: ${theme.sizes.font_size_cozy};
+    }
+    @media screen and (min-width: 800px) {
+      font-size: ${theme.sizes.font_size_spacious};
+    }
+
     > * {
       flex-grow: 1;
       list-style: none;
@@ -47,6 +25,28 @@ export default styled.div`
       @media screen and (min-width: 800px) {
         padding: 20px 0 20px 0;
       }
+    }
+
+    a, a:visited {
+      color: ${theme.colors.foreground};
+      text-decoration: none;
+      border-radius: 10px 5px 10px 5px;
+      @media screen and (max-width: 799px) {
+        padding: 5px 5px 5px 5px;
+      }
+      @media screen and (min-width: 800px) {
+        padding: 10px 5px 10px 5px;
+      }
+    }
+
+    a:hover, a:focus {
+      background-color: ${theme.colors.foreground};
+      color: ${theme.colors.background};
+      outline: none;
+    }
+
+    ul {
+      margin: 0;
     }
   }
 
@@ -104,8 +104,8 @@ export default styled.div`
 
     > li:first-child {
       > a:hover {
-        background-color: ${theme.colors.background_1};
-        color: ${theme.colors.foreground_1};
+        background-color: ${theme.colors.background};
+        color: ${theme.colors.foreground};
       }
     }
   }

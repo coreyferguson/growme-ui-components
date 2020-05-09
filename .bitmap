@@ -93,6 +93,24 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "overattribution.growme/root-style@0.0.44": {
+        "files": [
+            {
+                "relativePath": "src/components/RootStyle/RootStyle.js",
+                "test": false,
+                "name": "RootStyle.js"
+            },
+            {
+                "relativePath": "src/components/RootStyle/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/RootStyle/index.js",
+        "trackDir": "src/components/RootStyle",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "overattribution.growme/styles@0.0.41": {
         "files": [
             {
@@ -103,6 +121,29 @@
         ],
         "mainFile": "styles/theme.js",
         "trackDir": "styles",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "overattribution.growme/text-and-hero-page@0.0.46": {
+        "files": [
+            {
+                "relativePath": "src/components/pages/TextAndHeroPage/TextAndHeroStyle.js",
+                "test": false,
+                "name": "TextAndHeroStyle.js"
+            },
+            {
+                "relativePath": "src/components/pages/TextAndHeroPage/TextAndHeroView.js",
+                "test": false,
+                "name": "TextAndHeroView.js"
+            },
+            {
+                "relativePath": "src/components/pages/TextAndHeroPage/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/pages/TextAndHeroPage/index.js",
+        "trackDir": "src/components/pages/TextAndHeroPage",
         "origin": "AUTHORED",
         "exported": true
     },

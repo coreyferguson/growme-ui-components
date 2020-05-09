@@ -1,0 +1,1 @@
+export { default, GlobalStyle } from './RootStyle';
