@@ -60,5 +60,8 @@
         }
       }
     }
+  },
+  "dependencies": {
+    "@bit/overattribution.growme.root-style": "0.0.47"
   }
 }

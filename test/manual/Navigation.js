@@ -6,7 +6,8 @@ export default function Navigation(props) {
   const globalNavProps = {
     logo: <Link to='/'><img src='https://assets.growme.fyi/logo_medium.jpg' />ui gallery</Link>,
     navigationalLinks: props.navigationalLinks || [
-      <NavLink to='/page'>page</NavLink>
+      <NavLink to='/page'>page</NavLink>,
+      <NavLink to='/form'>form</NavLink>,
     ]
   };
   return (

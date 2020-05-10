@@ -75,13 +75,15 @@ export default styled.div`
   }
 
   textarea {
-    background-color: ${theme.colors.background_lighten_1};
+    background-color: ${theme.colors.background_1};
     color: ${theme.colors.foreground_lighten_1};
     border: 0px;
     border-bottom: 1px solid ${theme.colors.foreground_lighten_1};
     resize: none;
     font-size: 1em;
     padding: ${theme.sizes.padding_cozy};
+    font-family: ${theme.styles.font_family};
+    letter-spacing: ${theme.styles.letter_spacing};
   }
   textarea:focus {
     outline: none;
@@ -97,15 +99,16 @@ export default styled.div`
     border-bottom: 1px solid ${theme.colors.primary};
   }
 
-
   input[type=text] {
-    background-color: ${theme.colors.background_lighten_1};
+    background-color: ${theme.colors.background_1};
     color: ${theme.colors.foreground_lighten_1};
     border: 0px;
     border-bottom: 1px solid ${theme.colors.foreground_lighten_1};
     resize: none;
     font-size: 100%;
     padding: 5px;
+    font-family: ${theme.styles.font_family};
+    letter-spacing: ${theme.styles.letter_spacing};
   }
   input[type=text]:focus {
     outline: none;

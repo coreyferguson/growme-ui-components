@@ -2,6 +2,7 @@ const theme = {
   colors: {
     background_lighten_1: '#5F5F5F',
     background: '#212121',
+    background_1: '#2E2E2E',
 
     foreground_lighten_1: '#F3F3F3',
     foreground: '#F2F2F2',
